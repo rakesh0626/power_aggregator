@@ -25,6 +25,16 @@ public class Battery {
 	@Column
 	private int postalcode;
 	
+	public Battery() {
+		
+	}
+
+	public Battery(int code,String name,long watt,int postalcode) {
+		this.code=code;
+		this.name=name;
+		this.watt=watt;
+		this.postalcode=postalcode;
+	}
 	public int getCode() {
 		return code;
 	}
@@ -51,6 +61,11 @@ public class Battery {
 	}
 	public void setPostalcode(int postcode) {
 		this.postalcode = postcode;
+	}
+	
+	@Override
+	public String toString() {
+		return "Battery [code=" + code + ", name=" + name + ", watt=" + watt + ", postalcode=" + postalcode + "]";
 	}
 	
 	

@@ -53,4 +53,11 @@ public class BatteryDto {
 	public void setPostalcode(int postcode) {
 		this.postalcode = postcode;
 	}
+
+	@Override
+	public String toString() {
+		return "BatteryDto [code=" + code + ", name=" + name + ", watt=" + watt + ", postalcode=" + postalcode + "]";
+	}
+	
+	
 }
